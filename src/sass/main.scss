@@ -1,7 +1,13 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+@import './base/vars';
+@import './base/fonts';
+@import './base/base_styles';
+@import "./base/base_styles";
+@import './base/placeholder';
+@import './components/social-module';
+@import './components/gallery';
+@import './layout/footer';
+@import './layout/contacts';
+@import './components/about';
+@import './components/header_hero';
+@import './components/advantages';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
