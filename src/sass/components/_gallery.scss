@@ -78,18 +78,44 @@ svetlana
   transition: all 0.5s ease-in-out;
 }
 
-.masonry__image:first-child {
-  margin-top: 80px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .masonry__image:first-child {
+    margin-top: 40px;
+  }
+
+  .masonry__image:nth-child(9) {
+    margin-top: 90px;
+  }
 }
 
-.masonry__image:last-child {
-  margin-top: 90px;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .masonry__image:first-child {
+    margin-top: 40px;
+  }
+
+  .masonry__image:nth-child(7) {
+    margin-top: 50px;
+  }
+
+  .masonry__image:nth-child(10) {
+    margin-top: 120px;
+  }
 }
 
-.masonry__image:nth-child(7) {
-  margin-top: 50px;
-}
+@media screen and (min-width: 1280px) {
+  .masonry__image:first-child {
+    margin-top: 80px;
+  }
 
-.masonry__image:nth-child(3) {
-  margin-top: 30px;
+  .masonry__image:nth-child(3) {
+    margin-top: 120px;
+  }
+
+  .masonry__image:nth-child(7) {
+    margin-top: 50px;
+  }
+
+  .masonry__image:last-child {
+    margin-top: 90px;
+  }
 }
