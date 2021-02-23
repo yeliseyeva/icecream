@@ -75,59 +75,52 @@
 }
 
 .header_nav {
+  position: absolute;
 
-    position: absolute;
- 
-    top: -100%;
-    overflow: hidden;
-    background-color: #e17992;
-  
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-   &.is-open {
-     z-index: 1;
-      top: 0;
-      visibility: inherit;
-      padding-left: 25px;
-      padding-top: 135px;
+  top: -100%;
+  overflow: hidden;
+  background-color: #e17992;
 
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      width: 100%;
-      height: 100vh;
+  &.is-open {
+    z-index: 1;
+    top: -6;
+    left: 0;
+    visibility: inherit;
+    padding-left: 25px;
+    padding-top: 135px;
 
-      .item {
-        display: block;
-        border-top: 1px solid #E18298;
+    width: 100%;
+    height: 100vh;
 
-        &:last-child {
-          border-bottom: 1px solid #E18298;
-        }
+    .item {
+      display: block;
+      border-top: 1px solid #e18298;
+
+      &:last-child {
+        border-bottom: 1px solid #e18298;
       }
-
-      .item +.item {
-        margin-top: 22px;
-      }
-
     }
-    @media screen and (min-width: 768px) {
 
+    .item + .item {
+      margin-top: 22px;
     }
+  }
+  @media screen and (min-width: 768px) {
+  }
 
   @media screen and (min-width: 1280px) {
-
     position: static;
     margin-top: 20px;
-    background-color: inherit;  
+    background-color: inherit;
 
     //display: block;
-   // margin-top: 16px;
-
+    // margin-top: 16px;
   }
 }
 
-
 .header_list {
-  
   padding: 0;
 
   @media screen and (min-width: 1280px) {
@@ -187,13 +180,12 @@
     background-color: #ecebeb;
   }
 
- position: absolute;
+  position: absolute;
 
   @media screen and (min-width: 768px) {
     opacity: 1;
     position: static;
     pointer-events: auto;
-  
   }
 
   @media screen and (min-width: 1280px) {
@@ -202,8 +194,7 @@
 }
 
 .header_nav.is-open {
-
-  ~  .header_button {
+  ~ .header_button {
     z-index: 2;
     opacity: 1;
     position: absolute;
@@ -213,10 +204,9 @@
     transform: translate(-50%);
   }
 
-   .header_list {
+  .header_list {
     text-align: left;
   }
- 
 }
 
 .header_next {
