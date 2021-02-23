@@ -62,6 +62,8 @@
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: $width-tablet) {
       max-width: 220px;
@@ -109,7 +111,10 @@
       }
     }*/
   }
-
+  .products-item:hover,
+  .products-item:focus {
+    transform: scale(1.1);
+  }
   &-name {
     @extend %pre-title;
     color: $white-text-color;
@@ -164,9 +169,14 @@
     transition-duration: 0.5s;
     transition-timing-function: linear;
     transition-delay: 0ms;
+    transition: background-color $primari-transition-duration
+      cubic-bezier($cubic-bezier);
   }
 }
-
+.products-button:hover,
+.products-button:focus {
+  background-color: $button-hover-color;
+}
 .products-item::before {
   position: absolute;
   content: '';
