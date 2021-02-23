@@ -156,48 +156,13 @@ try {
   _iterator.f();
 }
 
-jQuery(document).ready(function () {
-  var btn = $('#button');
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
-  btn.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, '300');
-  });
-});
 var btn = $('#button');
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
+$(window).on(function () {
+  if ($(window).scrollTop() < 300) {
     btn.addClass('show');
   } else {
     btn.removeClass('show');
   }
-});
-
-if ($(window).scrollTop() > 300) {
-  btn.addClass('show');
-} else {
-  btn.removeClass('show');
-}
-
-if ($(window).scrollTop() > 300) {
-  btn.addClass('show');
-} else {
-  btn.removeClass('show');
-}
-
-btn.on('click', function (e) {
-  e.preventDefault();
-  $('html, body').animate({
-    scrollTop: 0
-  }, '300');
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -227,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50562" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58869" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
