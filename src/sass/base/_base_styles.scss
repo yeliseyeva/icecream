@@ -142,7 +142,7 @@ button {
   border-radius: 50%;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 1px;
   transition: background-color $primari-transition-duration
     cubic-bezier($cubic-bezier);
   z-index: 1000;
