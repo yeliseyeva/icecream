@@ -164,8 +164,8 @@ button {
   line-height: 50px;
   color: $main-background-color;
 }
-// #button {
-//   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-//   opacity: 0;
-//   visibility: hidden;
-// }
+.show {
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
