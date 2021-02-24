@@ -3,6 +3,8 @@
     background-color: rgba($color: #ffb8ca, $alpha: .6);
     margin: 0 auto;
     &__close {
+        display: flex;
+         align-items: center;
         border-radius: 50%;
         border: 1px solid;
         
@@ -191,3 +193,9 @@
     background-size: contain;
 }
 
+
+.modal  label {
+ 
+    color: $button-second-color;
+   
+}
