@@ -1159,7 +1159,6 @@ padding-bottom: 56px;
 
 .header_container {
   display: flex;
-  align-items: flex-start;
   margin-bottom: 137px;
 }
 @media screen and (min-width: 768px) {
@@ -1194,12 +1193,16 @@ padding-bottom: 56px;
 .header_nav.is-open .item {
   display: block;
   border-top: 1px solid #e18298;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .header_nav.is-open .item:last-child {
   border-bottom: 1px solid #e18298;
 }
-.header_nav.is-open .item + .item {
-  margin-top: 22px;
+.header_nav.is-open .header_links {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
 }
 @media screen and (min-width: 1280px) {
   .header_nav {
