@@ -1,6 +1,6 @@
 .modal {
     position: fixed;
-    
+    background-color: rgba($color: #ffb8ca, $alpha: .6);
     margin: 0 auto;
     &__close {
         border-radius: 50%;
@@ -58,7 +58,7 @@
 }
 
 .modal__container {
-    margin: 5%;
+    margin-top: 5%;
     height: 90%;
     overflow: scroll;
     display: block;

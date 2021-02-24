@@ -20,7 +20,7 @@ $order_size3 = $_POST['size3'];
 $token = "1317337591:AAFKI0SwiwXrwg9jQbuqxPqOdrsNsCBBS0k";
  
 //нужна вставить chat_id (Как получить chad id, читайте ниже)
-$chat_id = "-309087490";
+$chat_id = "-1612864198";
  
 //Далее создаем переменную, в которую помещаем PHP массив
 $arr = array(
