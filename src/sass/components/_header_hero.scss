@@ -40,6 +40,10 @@
   background-size: 171px, 168px, 171px, 346px, cover;
 
   @media screen and (min-width: 768px) {
+    background-image: url(../images/hero-girl-tablet@2x.png),
+      url(../images/hero-ice-cream-tablet@2x.png),
+      url(../images/hero-milk-tablet.png), url(../images/ellipse3@1x.png);
+
     background-repeat: no-repeat;
     background-position: left 566px top 266px, top 88px right 247px,
       bottom 28px left 19px, left 307px top 31px;
@@ -50,6 +54,10 @@
   }
 
   @media screen and (min-width: 1280px) {
+    background-image: url(../images/hero-girl-desktop@2x.png),
+      url(../images/hero-ice-cream-desktop@2x.png),
+      url(../images/hero-milk-desktop.png), url(../images/ellipse3@1x.png);
+
     background-repeat: no-repeat;
     background-position: top 433px left 878px, left 594px top 108px,
       left 77px top 429px, left 475px top 52px;
