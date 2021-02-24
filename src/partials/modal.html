@@ -5,29 +5,68 @@
                 <use href="./images/svg/symbol-defs.svg#cross"></use>
             </svg>
         </button>
+        <h2 class="modal-title">make a choice:</h2>
         <form action="">
-            <label for="">Name
-                <input type="text">
-            </label>
-            <label for="">Email
-                <input type="mail">
-            </label>
-            <label for="">Telephone
-                <input type="tel">
-            </label>
-            <p>make a choice:</p>
-            <label>
-              <input type="radio" name="color" value="red"/>
-              Ice-cream
-            </label>
-            <label>
-                <input type="radio" name="color" value="red"/>
-                Ice coffee
-              </label>
-              <label>
-                <input type="radio" name="color" value="red"/>
-                Milkshakes
-              </label>
+            <div class="modal-info">
+                <label class="modal-info__lable" for="">Name
+                    <input class="modal-info__input" type="text">
+                </label>
+                <label class="modal-info__lable" for="">Email
+                    <input class="modal-info__input" type="mail">
+                </label>
+                <label class="modal-info__lable" for="">Telephone
+                    <input class="modal-info__input" type="tel">
+                </label>
+                <label class="modal-info__lable" for="">address
+                    <input class="modal-info__input" type="text">
+                </label>
+            </div>
+            <h3 class="choice-title">make a choice:</h3>
+
+            <div>
+                <div class="choice-stile">
+                    <input class="visualy-hidden" id="ice-cream" type="checkbox" name="Ice-cream" value="Ice-cream"/>
+                    <label class="checkbox__label" for="ice-cream">Ice-cream</label>
+                        
+                      <div class="size1">
+                        <label for="size1">Size</label>
+                        <select id="size1" name="size">
+                            <option value="s">Small</option>
+                            <option value="m" selected>Medium</option>
+                            <option value="l">Large</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="choice-stile">
+                    <input class="visualy-hidden" type="checkbox" name="choose" value="Ice coffee" id="ice-coffee"/>
+                    <label class="checkbox__label" for="ice-coffee">Ice coffee</label>
+    
+                        <div class="size2">
+                            <label class="modal-size2" id="modal-size2" for="size2">Size
+                                <select id="size2" name="size">
+                                    <option value="s">Small</option>
+                                    <option value="m" selected>Medium</option>
+                                    <option value="l">Large</option>
+                                </select>
+                            </label>
+                        </div>
+                </div>
+                <div class="choice-stile">
+                    <input class="visualy-hidden" type="checkbox" name="choose" value="Milkshakes" id="milkshakes"/>
+                    <label class="checkbox__label" for="milkshakes">Milkshakes</label>
+                    <div class="size3">
+                        <label for="size3">Size</label>
+                        <select id="size3" name="size">
+                            <option value="s">Small</option>
+                            <option value="m" selected>Medium</option>
+                            <option value="l">Large</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="order-button" type="submit">order</button>
+
+            
         </form>
     
     </div>
