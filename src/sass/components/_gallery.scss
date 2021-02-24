@@ -1,24 +1,17 @@
 .gallery {
+  &__container {
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-background-color 40%,
+      $main-background-color 40%
+    );
+  }
 
-
-    &__container {
-        width: 100%;
-        background-image: linear-gradient(
-            to bottom,
-            $secondary-background-color 40%,
-            $main-background-color 40%,
-            
-    
-        );
-    
-    }
-
-    
-
-    &__image {
-        width: 100%;
-        height: 100%;
-    }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*
@@ -54,3 +47,75 @@ svetlana
         
     }
     */
+
+// Masonry gallery
+.masonry {
+  column-gap: 1em;
+
+  @media screen and (min-width: 480px) {
+    column-count: 3;
+  }
+
+  @media screen and (min-width: 768px) {
+    column-count: 4;
+  }
+
+  @media screen and (min-width: 1280px) {
+    column-count: 6;
+  }
+}
+
+.masonry__image {
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.masonry__image:hover {
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .masonry__image:first-child {
+    margin-top: 40px;
+  }
+
+  .masonry__image:nth-child(9) {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .masonry__image:first-child {
+    margin-top: 40px;
+  }
+
+  .masonry__image:nth-child(7) {
+    margin-top: 50px;
+  }
+
+  .masonry__image:nth-child(10) {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masonry__image:first-child {
+    margin-top: 80px;
+  }
+
+  .masonry__image:nth-child(3) {
+    margin-top: 120px;
+  }
+
+  .masonry__image:nth-child(7) {
+    margin-top: 50px;
+  }
+
+  .masonry__image:last-child {
+    margin-top: 90px;
+  }
+}
