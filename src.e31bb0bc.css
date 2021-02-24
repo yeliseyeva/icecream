@@ -2396,6 +2396,7 @@ padding-bottom: 56px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 .order-button:hover, .order-button:focus {
   color: #ecebeb;
@@ -2474,6 +2475,10 @@ padding-bottom: 56px;
 .choice-stile:nth-child(3) .checkbox__label::before {
   background-image: url(/Cheesecake-Milkshakes-photo-1954.db7f57a5.jpg);
   background-size: contain;
+}
+
+.modal label {
+  color: #c7133e;
 }
 
 .about_backdrop {
