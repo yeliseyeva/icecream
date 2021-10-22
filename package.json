@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/Fire-team-project",
+  "homepage": "https://yeliseyeva.github.io/icecream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Fire-team-project/"
+    "build": "parcel build src/*.html --public-url /icecream/"
   },
   "repository": {
     "type": "git",
